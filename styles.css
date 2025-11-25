@@ -1,0 +1,340 @@
+/* DESKTOP STYLES FINAL, DO NOT CHANGE IT! IT'S FINE!*/
+body {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
+  margin: 80px;
+}
+
+/* HEADER */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:20px;
+  
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.main-nav a {
+  
+  color: #000;
+  font-weight: bold;
+}
+
+/* HERO SECTION SRSLY, no one cares. */
+.hero-section {
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.hero-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+
+.intro-text {
+  max-width: 550px;
+  margin: 0 auto 20px auto;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.hero-image img {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  background: #ddd;
+  padding: 0;
+  
+}
+
+
+/*---- MENU---- is the color really what I want? */
+.menu-section {
+  display: block;
+  justify-content: center;
+  padding: 40px;
+  background-color:cornsilk;
+  margin: 80px auto;   
+  width: fit-content;  
+  text-align: center;  
+}
+
+
+.menu-section h2 {
+  text-align: center;
+  margin: 0 0 20px 0;  /* no horizontal shift */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.menu-columns {
+    display: flex;
+    justify-content: center;   
+    gap: 60px;                
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.menu-list {
+  list-style:circle;
+  padding: 10px;
+}
+
+.menu-list li {
+  font-size: 20px;
+  font-weight:bolder;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 20px;
+  height: 12px;
+  max-width: fit-content;
+  border-radius: 4px;
+  color:darkgoldenrod;
+  list-style-position: inside;
+
+}
+
+/* FAVORITES SECTION & STOP CHANGING EVERYTHING!*/
+.favorites-section {
+  padding: 40px 0;
+  text-align: left;
+  max-width: 900px;
+  margin: auto;
+  background-color: cornsilk;
+}
+
+.favorites-section h3 {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.favorite-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.favorite-item {
+    text-align: center;
+}
+
+.favorite-box {
+    width: 300px;
+    height: 200px;
+    background: #ddd;
+    border-radius: 6px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorite-box img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover; /*or contain... I can't decide...*/
+    border-radius: 6px;
+}
+
+.favorite-label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/*-----Tablet Styles-----*/
+@media (min-width: 481px) and (max-width: 960px) {
+
+.hero-image img {
+  width: 100%;
+  background: rgb(177, 206, 177);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.favorites-section {
+  padding: 40px 0;
+  text-align: left;
+  margin: auto;
+  background-color: honeydew;
+}
+.favorite-box {
+    width: 200px;     
+    height: 150px;    
+}
+.favorite-label {
+    font-size: 14px;  
+}
+
+.menu-section {
+    background-color:rgb(224, 235, 255)
+}
+
+
+.menu-list li {
+  font-size: 16px;
+  font-weight:bolder;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 20px;
+  height: 12px;
+  max-width: fit-content;
+  border-radius: 4px;
+  color:darkgoldenrod;
+  list-style-position: inside;
+}
+
+}
+/*-----Mobile Styles-----*/
+@media (max-width: 480px) {
+
+ body {
+        margin: 0;
+        padding: 10px;
+        background-color: aliceblue;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+    /* HEADER */
+    .top-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Make nav links vertical & centered */
+    .main-nav ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-nav ul li a {
+        font-size: 16px;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+        padding: 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 24px;
+    }
+
+    .intro-text {
+        max-width: 100%;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        padding: 0;              
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    /* MENU SECTION */
+    .menu-section {
+        margin: 40px auto;
+        width: 100%;
+        padding: 20px;
+        background-color: pink;
+    }
+
+    .menu-columns {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .menu-list li {
+        font-size: 18px;
+        padding: 10px 0;
+        color:rgb(117, 86, 8);
+    }
+
+    .favorites-section {
+        background-color:pink; /*...sorry about this, the girls pouted for this color*/
+    }
+
+    .favorite-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+        gap: 20px;
+    }
+
+    .favorite-box {
+        width: 70%;            
+        max-width: 250px;      
+        height: auto;
+        max-height: 150px;     
+        margin: 0 auto;        
+    }
+
+    .favorite-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .favorite-label {
+        font-size: 14px;
+        text-align: center;
+        color:rgb(117, 86, 8);  
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
